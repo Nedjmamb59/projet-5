@@ -26,7 +26,7 @@ const imgSlider = document.querySelector(".banner-img"); // Sélectionne l'élé
 const tagLineSlider = document.querySelector("#banner p"); // Sélectionne l'élément du texte de la bannière
 
 /* Initialisation de la position de l'image */
-let index = 0; // ndiquant que l'on commence par la première image (ou diapositive) du tableau
+let index = 0; // indique que l'on commence par la première image (ou diapositive) du tableau
 const lastElement = slides.length - 1; // permet de savoir où se trouve la dernière diapositive, utile pour éviter de dépasser les limites du tableau lors de la navigation.
 
 /* Sélection de l'élément contenant les points */
@@ -89,3 +89,4 @@ function dinamicSlidesContent() {
   imgSlider.src = "./assets/images/slideshow/" + slides[index].image; // Change la source de l'image
   tagLineSlider.innerHTML = slides[index].tagLine; // Change le texte de la bannière
 }
+
